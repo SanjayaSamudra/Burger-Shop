@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="px-3 py-2 text-bg-danger border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                        <a href="../index.html" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#home" />
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#speedometer2" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#table" />
+                            </svg>
+                            Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../products/add-new-product.html" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#grid" />
+                            </svg>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#people-circle" />
+                            </svg>
+                            Employers
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <form class="col-12 col-lg-6 mb-2 mb-lg-0 me-lg-auto" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-light text-dark me-2">Login</button>
+                <button type="button" class="btn btn-outline-warning">Sign-up</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Product Registration Form -->
+    <div class="card text-bg-dark">
+        <img src="images/orders-1.jpg" id="background-image" class="img-fluid" alt="Responsive image">
+        <div class="card-img-overlay">
+            <h4 class="card-title text-center">PLACE NEW ORDER</h4>
+            <form class="needs-validation" novalidate>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom01">Order ID</label>
+                                    <input type="text" class="form-control" id="validationCustom01"
+                                        placeholder="Order ID" value="" required disabled>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom05">Customer Name</label>
+                                    <input type="text" class="form-control" id="validationCustom05"
+                                        placeholder="Customer Name" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid product customer name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom02">Customer Telephone</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        placeholder="Customer Telephone" value="" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom02">Order Time</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        placeholder="Order Time" value="" required>
+                                    <div class="valid-feedback">
+                                        Please choose a order time.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom04">Order Date</label>
+                                    <input type="text" class="form-control" id="validationCustom04"
+                                        placeholder="Order Date" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid order date.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom02">Order Total</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        placeholder="Order Total" value="" required>
+                                    <div class="valid-feedback">
+                                        Please type the full order amount.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom02">Order Discount</label>
+                                    <input type="text" class="form-control" id="validationCustom02"
+                                        placeholder="Order Discount" value="" required>
+                                    <div class="valid-feedback">
+                                        Please type the full order discount.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div> -->
+                            <button class="btn btn-primary d-flex justify-content-center" type="submit">Submit
+                                form</button>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <h5 class="text-center mt-3">Item List</h5>
+                                <div class="col">
+                                    Item: Burger
+                                    <img src="images/place-order-1.jpg" alt="Placeholder"
+                                        class="bd-placeholder-img rounded-circle mt-3" width="140" height="140">
+                                    <h5 id="title1">Burgers</h5>
+                                    <!-- Small button groups (default and split) -->
+                                    <div class="btn-group">
+                                        <div class="row">
+                                            <div class="col">
+                                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Burgers
+                                                </button>
+                                                <div class="dropdown-menu">
+                                                    <button class="dropdown-item"
+                                                        onclick="chgTitle(this, 'title1')">Classic
+                                                        Burger
+                                                        (Large)
+                                                        <input type="number" id="quantity" value="0" min="0">
+                                                    </button>
+                                                    <button class="dropdown-item"
+                                                        onclick="chgTitle(this, 'title1')">Classic
+                                                        Burger
+                                                        (Regular)
+                                                        <input type="number" id="quantity" value="0" min="0">
+                                                    </button>
+                                                    <button class="dropdown-item"
+                                                        onclick="chgTitle(this, 'title1')">Turkey
+                                                        Burger
+                                                        <input type="number" id="quantity" value="0" min="0">
+                                                    </button>
+                                                    <button class="dropdown-item"
+                                                        onclick="chgTitle(this, 'title1')">Chicken
+                                                        Burger
+                                                        (Large)
+                                                        <input type="number" id="quantity" value="0" min="0">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    Item: Submarine
+                                    <img src="images/place-order-2.jpg" alt="Placeholder"
+                                        class="bd-placeholder-img rounded-circle mt-3" width="140" height="140">
+                                    <h5 id="title2">Submarines</h5>
+                                    <!-- Small button groups (default and split) -->
+                                    <div class="btn-group">
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Submarines
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <button class="dropdown-item"
+                                                onclick="alert('Crispy Chicken Submarine (Large) selected!'), chgTitle(this, 'title2')">Crispy
+                                                Chicken Submarine (Large)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Crispy Chicken Submarine (Regular) selected!'), chgTitle(this, 'title2')">Crispy
+                                                Chicken Submarine (Regular)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Chicken Submarine (Large) selected!'), chgTitle(this, 'title2')">Chicken
+                                                Submarine
+                                                (Large)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Chicken Submarine (Regular) selected!'), chgTitle(this, 'title2')">Chicken
+                                                Submarine (Regular)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    Item: Fries
+                                    <img src="images/place-order-3.jpg" alt="Placeholder"
+                                        class="bd-placeholder-img rounded-circle mt-3" width="140" height="140">
+                                    <h5 id="title3">Fries</h5>
+                                    <!-- Small button groups (default and split) -->
+                                    <div class="btn-group">
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Fries
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <button class="dropdown-item"
+                                                onclick="alert('Steak Fries (Large) selected!'), chgTitle(this, 'title3')">Steak
+                                                Fries (Large)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Steak Fries (Medium) selected!'), chgTitle(this, 'title3')">Steak
+                                                Fries (Medium)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('French Fries (Large) selected!'), chgTitle(this, 'title3')">French
+                                                Fries (Large)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('French Fries (Medium) selected!'), chgTitle(this, 'title3')">French
+                                                Fries (Medium)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col">
+                                    Item: Pasta
+                                    <img src="images/place-order-4.jpg" alt="Placeholder"
+                                        class="bd-placeholder-img rounded-circle mt-3" width="140" height="140">
+                                    <h5 id="title4">Pasta</h5>
+                                    <!-- Small button groups (default and split) -->
+                                    <div class="btn-group">
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Pasta
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <button class="dropdown-item"
+                                                onclick="alert('Chicken n Cheese Pasta selected!'), chgTitle(this, 'title4')">Chicken
+                                                n Cheese Pasta</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Chicken Penne Pasta selected!'), chgTitle(this, 'title4')">Chicken
+                                                Penne Pasta</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Ground Turkey Pasta Bake selected!'), chgTitle(this, 'title4')">Ground
+                                                Turkey Pasta Bake</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Creamy Shrimp Pasta selected!'), chgTitle(this, 'title4')">Creamy
+                                                Shrimp Pasta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    Item: Chicken
+                                    <img src="images/place-order-5.jpg" alt="Placeholder"
+                                        class="bd-placeholder-img rounded-circle mt-3" width="140" height="140">
+                                    <h5 id="title5">Chicken</h5>
+                                    <!-- Small button groups (default and split) -->
+                                    <div class="btn-group">
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Chicken
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <button class="dropdown-item"
+                                                onclick="alert('Fried Chicken (Small) selected!'), chgTitle(this, 'title5')">Fried
+                                                Chicken (Small)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Fried Chicken (Regular)  selected!'), chgTitle(this, 'title5')">Fried
+                                                Chicken (Regular) </button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Fried Chicken (Large) selected!'), chgTitle(this, 'title5')">Fried
+                                                Chicken (Large)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Hot Wings (Large) selected!'), chgTitle(this, 'title5')">Hot
+                                                Wings (Large)</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    Item: Beverages
+                                    <img src="images/place-order-6.jpeg" alt="Placeholder"
+                                        class="bd-placeholder-img rounded-circle mt-3" width="140" height="140">
+                                    <h5 id="title6">Beverages</h5>
+                                    <!-- Small button groups (default and split) -->
+                                    <div class="btn-group">
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Beverages
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <button class="dropdown-item"
+                                                onclick="alert('Pepsi (330ml) selected!'), chgTitle(this, 'title6')">Pepsi
+                                                (330ml)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Coca-Cola (330ml)  selected!'), chgTitle(this, 'title6')">Coca-Cola
+                                                (330ml)</button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Sprite (330ml)  selected!'), chgTitle(this, 'title6')">Sprite
+                                                (330ml) </button>
+                                            <button class="dropdown-item"
+                                                onclick="alert('Mirinda (330ml) selected!'), chgTitle(this, 'title6')">Mirinda
+                                                (330ml)</button>
+                                        </div>
+                                    </div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-warning mt-3" data-toggle="modal"
+                                        data-target="#exampleModalCenter">
+                                        Place Order
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-dark" id="exampleModalLongTitle">Place Order</h5>
+                                                    <button type="button" class="close border-white"
+                                                        data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-black">
+                                                    Do you want to place the order?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">No</button>
+                                                    <button type="button" class="btn btn-primary"
+                                                        data-dismiss="modal">Yes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>
